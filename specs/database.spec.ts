@@ -1,10 +1,13 @@
 import assert from 'node:assert';
 import { describe, test } from 'node:test';
-import { Database } from '~/deps/database.js';
+import { Database } from '~/deps';
 
 describe(Database.name, () => {
-    test('does something', () => {
+    test(Database.prototype.getById.name, () => {
         const db = new Database();
-        assert.equal(db.getById('2')?.name, 'user1');
+        const user = db.getById('1');
+
+        assert.equal(user?.id, '1');
+        assert.equal(user?.name, 'user1');
     });
 });

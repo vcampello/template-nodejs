@@ -4,8 +4,8 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "lib": ["ESNext"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
     "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
     "strict": true,
