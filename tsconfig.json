@@ -1,16 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "_version": "22.0.0",
+  "extends": "@tsconfig/node22/tsconfig.json",
   "compilerOptions": {
-    "esModuleInterop": true,
-    "lib": ["ESNext"],
-    "module": "ES2022",
-    "moduleResolution": "Bundler",
     "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "target": "ESNext",
     "rootDir": "./src/",
     "baseUrl": "./",
     "paths": {
